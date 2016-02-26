@@ -6,8 +6,8 @@ Hamming.prototype.compute = function (DNA1, DNA2) {
   }
   var count = 0;
   for(var i = 0; i < DNA1.length; i++) {
-    if (DNA1.charAt(i) !== DNA2.charAt(i)) {
-      count += 1;
+    if (DNA1[i] !== DNA2[i]) {
+      count++;
     }
   }
   return count;
